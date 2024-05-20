@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Index </title>   
+        
+        <style>
+        body{
+            background-color: beige;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:67px;
+            text-align: center;
+            }
+        </style>                
+    </head>
+    <body></br></br></br></br></br>
+        
+        <div align="center">
+            <h1>BOOK STORE FRONT</h1>
+            <img src="static\Bookstorelogo (Small).jpg"><br><br>
+            <p>Hello {{ message }}</p>
+            <button><a href="http://127.0.0.1:5050/books">Your Book Collection</a></button>
+            <button><a href="http://127.0.0.1:5050/update ">Update your collection</a></button>
+            <button><a href="http://127.0.0.1:5050/remove">Remove from your collection</a></button>
+            <br>
+            <br>
+            <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+        </div>
+    </body>
+</html>

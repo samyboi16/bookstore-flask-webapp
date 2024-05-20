@@ -1,0 +1,31 @@
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> RegisterUpdate</title>			 
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Update</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('update') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="name_book" name="name_book" type="text" placeholder="Enter Book Name" class="textbox"/></br></br>
+					<input id="genre_book" name="genre_book" type="text" placeholder="Enter Genre" class="textbox"/></br></br>
+					<select id="book_status" name="book_status">
+                        <option value="Read">Read</option>
+                        <option value="Unread">Unread</option>
+                        <option value="In Progress">In Progress</option>
+                    </select></br></br>
+					<input id="links" name="links" type="text" placeholder="Enter link here" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Update"></br>
+				</form>
+			</h2>
+		</div>
+		</div>
+	</body>
+</html>

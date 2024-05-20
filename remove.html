@@ -1,0 +1,24 @@
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Remove </title>			 
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Remove</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('remove') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+                <input id="name_book" name="name_book" type="text" placeholder="Enter Book Name" class="textbox"/></br></br>
+				<input type="submit" class="btn" value="remove"></br>
+				</form>
+			</h2>
+		</div>
+		</div>
+	</body>
+</html>
